@@ -13,6 +13,7 @@ public class Main {
         b = scanner.nextInt();
 
         System.out.println("nwd :" + nwd(a, b));
+        System.out.println("nww: " + nww(a, b));
     }
 
     private static int nwd(int a, int b) {
@@ -24,5 +25,9 @@ public class Main {
             }
         }
         return a;
+    }
+
+    private static int nww(int a, int b) {
+        return (a * b) / nwd(a, b);
     }
 }
